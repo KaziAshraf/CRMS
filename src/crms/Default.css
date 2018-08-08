@@ -1,0 +1,133 @@
+@font-face
+{
+    src: url("Slabo27px-Regular.ttf");
+}
+.text
+{
+    -fx-font-family: 'Slabo 27px', serif;
+    
+}
+.menubtn
+{
+    -fx-background-color: #006064;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    
+}
+.menubtn:hover
+{
+    -fx-background-color: #004D40;
+    -fx-font-size: 16;
+}
+.Controlbtn:hover
+{
+    -fx-background-color: #4DB6AC;
+}
+
+.messagetab
+{
+    -fx-background-color: #006064;
+    -fx-font-size: 13;
+    
+}
+.messagetab:hover
+{
+    -fx-background-color: #004D40;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+.Label
+{
+    -fx-font-size: 20;
+    -fx-background-color: #006064;
+    -fx-text-fill: white;
+}
+.vehicle_btn
+{
+    -fx-background-color: #006064;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+}
+.vehicle_btn:hover
+{
+    -fx-background-color: #004D40;
+    -fx-font-weight: bold;
+}
+.vehicle_details_title
+{
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+}
+.vehicle_details
+{
+    -fx-font-size: 18;
+}
+.search 
+{
+    -fx-font-family: 'Slabo 27px', serif;
+    -fx-background-color: #F0F4C3;
+    -fx-background-radius: 12;
+}
+.search:focused
+{
+    -fx-effect: dropshadow( three-pass-box , #004D40 , 8 , 0.0 , 2 , 0 );
+    -fx-background-color: white;
+   
+}
+.aud_TextField_Inputs
+{
+    -fx-font-family: 'Slabo 27px', serif;
+    -fx-background-color: #B2DFDB;
+}
+.aud_TextField_Inputs:hover
+{
+    -fx-effect: dropshadow( three-pass-box , #004D40 , 8 , 0.0 , 2 , 0 );
+}
+.aud_TextField_Inputs:focused
+{
+    -fx-effect: dropshadow( three-pass-box , #004D40 , 8 , 0.0 , 2 , 0 );
+    -fx-background-color: white;
+}
+.aud_Combobox_Inputs
+{
+    -fx-background-color: #B2DFDB;
+}
+.aud_Combobox_Inputs:hover
+{
+    -fx-effect: dropshadow( three-pass-box , #004D40 , 8 , 0.0 , 2 , 0 );
+}
+.aud_Combobox_Inputs:focused
+{
+    -fx-effect: dropshadow( three-pass-box , #004D40 , 8 , 0.0 , 2 , 0 );
+    -fx-background-color: white;
+}
+.aud_Date_Inputs
+{
+    -fx-font-family: 'Slabo 27px', serif;
+    -fx-background-color: #B2DFDB;
+}
+.aud_Date_Inputs:hover
+{
+    -fx-effect: dropshadow( three-pass-box , #004D40 , 8 , 0.0 , 2 , 0 );
+}
+.aud_Date_Inputs:focused
+{
+    -fx-effect: dropshadow( three-pass-box , #004D40 , 8 , 0.0 , 2 , 0 );
+    -fx-background-color: white;
+}
+.aud_Control_Btn
+{
+    -fx-background-color: #01579B;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+}
+.aud_Control_Btn:hover
+{
+    -fx-background-color: #b71c1c;
+}
+.aud_title
+{
+    -fx-font-size: 25;
+}

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+
+<BorderPane fx:id="mainPane" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #9E9E9E;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crms.FXMLDocumentController">
+   <left>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="558.0" prefWidth="206.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="Homebtn" contentDisplay="TOP" onAction="#handleButtonAction" prefHeight="108.0" prefWidth="209.0" styleClass="menubtn" stylesheets="@Default.css" text="Home">
+               <graphic>
+                  <ImageView fx:id="HomeIcon" fitHeight="41.0" fitWidth="36.0" opacity="0.34" pickOnBounds="true" preserveRatio="true" styleClass="menuicons">
+                     <image>
+                        <Image url="@Icons/web-server.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></JFXButton>
+            <JFXButton fx:id="Messagesbtn" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#handleButtonAction" prefHeight="108.0" prefWidth="209.0" styleClass="menubtn" stylesheets="@Default.css" text="Rental Requests and Messages">
+               <graphic>
+                  <ImageView fx:id="MessagesIcon" fitHeight="41.0" fitWidth="36.0" opacity="0.31" pickOnBounds="true" preserveRatio="true" styleClass="menuicons">
+                     <image>
+                        <Image url="@Icons/rent-a-car.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="vehicle_info_btn" contentDisplay="TOP" layoutX="10.0" layoutY="118.0" onAction="#handleButtonAction" prefHeight="108.0" prefWidth="209.0" styleClass="menubtn" stylesheets="@Default.css" text="Vehicle Informations">
+               <graphic>
+                  <ImageView fx:id="RentalIcon" fitHeight="41.0" fitWidth="36.0" opacity="0.31" pickOnBounds="true" preserveRatio="true" styleClass="menuicons">
+                     <image>
+                        <Image url="@Icons/car-settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="Employeesbtn" contentDisplay="TOP" layoutX="10.0" layoutY="226.0" onAction="#handleButtonAction" prefHeight="108.0" prefWidth="209.0" styleClass="menubtn" stylesheets="@Default.css" text="Employees">
+               <graphic>
+                  <ImageView fx:id="EmployeesIcon" fitHeight="41.0" fitWidth="36.0" opacity="0.36" pickOnBounds="true" preserveRatio="true" styleClass="menuicons">
+                     <image>
+                        <Image url="@Icons/men-1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="Settingsbtn" contentDisplay="TOP" layoutX="10.0" layoutY="334.0" onAction="#handleButtonAction" prefHeight="108.0" prefWidth="209.0" styleClass="menubtn" stylesheets="@Default.css" text="Settings">
+               <graphic>
+                  <ImageView fx:id="SettingsIcon" fitHeight="41.0" fitWidth="36.0" opacity="0.39" pickOnBounds="true" preserveRatio="true" styleClass="menuicons">
+                     <image>
+                        <Image url="@Icons/wrench-and-screwdriver-crossed.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="Sitebtn" contentDisplay="TOP" layoutX="10.0" layoutY="432.0" onAction="#handleButtonAction" prefHeight="108.0" prefWidth="209.0" styleClass="menubtn" stylesheets="@Default.css" text="Site">
+               <graphic>
+                  <ImageView fx:id="SiteIcon" fitHeight="41.0" fitWidth="36.0" opacity="0.31" pickOnBounds="true" preserveRatio="true" styleClass="menuicons">
+                     <image>
+                        <Image url="@Icons/document.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="Sitebtn1" contentDisplay="TOP" layoutX="10.0" layoutY="475.0" onAction="#handleButtonAction" prefHeight="108.0" prefWidth="209.0" styleClass="menubtn" stylesheets="@Default.css" text="Payment Information">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="SiteIcon1" fitHeight="41.0" fitWidth="36.0" opacity="0.39" pickOnBounds="true" preserveRatio="true" styleClass="menuicons">
+                     <image>
+                        <Image url="@Icons/calculator.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children></VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="14.0" prefWidth="987.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="minimizebtn" alignment="BASELINE_RIGHT" contentDisplay="GRAPHIC_ONLY" layoutX="920.0" layoutY="20.0" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="26.0" styleClass="Controlbtn" stylesheets="@Default.css">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/call-received-arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="fullscreenbtn" alignment="BASELINE_RIGHT" contentDisplay="GRAPHIC_ONLY" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="26.0" styleClass="Controlbtn" stylesheets="@Default.css">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/copy-content.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="closebtn" alignment="BASELINE_RIGHT" contentDisplay="GRAPHIC_ONLY" layoutX="926.0" layoutY="20.0" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="26.0" styleClass="Controlbtn" stylesheets="@Default.css">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/close-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children></HBox>
+   </top>
+   <center>
+      <StackPane fx:id="Defaultpane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="773.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <effect>
+            <DropShadow />
+         </effect>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </StackPane>
+   </center>
+</BorderPane>

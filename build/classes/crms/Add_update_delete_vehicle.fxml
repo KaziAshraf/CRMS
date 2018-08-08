@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="aud_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="604.0" stylesheets="@Default.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crms.Add_update_delete_vehicleController">
+   <center>
+      <GridPane prefHeight="380.0" prefWidth="535.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="180.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXTextField fx:id="aud_Vehicle_name" promptText="Enter Vehicle Name.." styleClass="aud_TextField_Inputs">
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin></JFXTextField>
+            <JFXComboBox fx:id="aud_Vehicle_Type" prefWidth="200.0" promptText="Vehicle Type" styleClass="aud_Combobox_Inputs" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <JFXTextField fx:id="aud_Vehicle_SL_no" promptText="Enter Vehicle Serial no." styleClass="aud_TextField_Inputs" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin></JFXTextField>
+            <JFXComboBox fx:id="aud_Manu_Company" prefWidth="200.0" promptText="Manufacturing Company" styleClass="aud_Combobox_Inputs" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <JFXComboBox fx:id="aud_Status" prefWidth="200.0" promptText="Status of Vehicle" styleClass="aud_Combobox_Inputs" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <JFXTextField fx:id="aud_Rent_Price" promptText="Enter Rent Price (Per Hour)" styleClass="aud_TextField_Inputs" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin></JFXTextField>
+            <JFXButton fx:id="aud_Save" onAction="#aud_handlebuttonAction" prefHeight="45.0" prefWidth="304.0" styleClass="aud_Control_Btn" text="Save" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/arrow-199-512.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect></ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="aud_Cancel" layoutX="10.0" layoutY="382.0" onAction="#aud_handlebuttonAction" prefHeight="45.0" prefWidth="336.0" styleClass="aud_Control_Btn" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <image>
+                        <Image url="@Icons/x-mark-3-512.png" />
+                     </image></ImageView>
+               </graphic></JFXButton>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <DatePicker fx:id="aud_Purchase_Date" focusTraversable="false" promptText="Purchase Date" styleClass="aud_Date_Inputs">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <DatePicker fx:id="aud_Last_Maintainance_Date" promptText="Last Maintainance Date" styleClass="aud_Date_Inputs">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <DatePicker fx:id="aud_Last_Rented" promptText="Last Rented" styleClass="aud_Date_Inputs">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin></DatePicker>
+                  <DatePicker fx:id="aud_Upcoming_Maintainance_Date" layoutX="62.0" layoutY="123.0" promptText="Upcoming Maintainance Date" styleClass="aud_Date_Inputs" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
+               <children>
+                  <ImageView fx:id="aud_Car_Image" fitHeight="83.0" fitWidth="166.0" pickOnBounds="true">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <image>
+                        <Image url="@../../../../../../mnt/FE3639F33639AD91/Wallpapers/dota_2___tiny_by_sheron1030-d8l34bq.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="302.0">
+                     <children>
+                        <TextField fx:id="aud_Image_Path" promptText="Enter path of Image" styleClass="aud_TextField_Inputs">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="aud_Browse_Image" mnemonicParsing="false" prefHeight="27.0" prefWidth="85.0" text="Browse" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="52.0" prefWidth="657.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="aud_title" styleClass="aud_title" text="Label">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
